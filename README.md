@@ -59,10 +59,32 @@ Jei naudotojas pasirinko naudoti tris konteinerius, tada nurodyti duomenys išsp
 
 ## **Testavimas** <br>
 ### **I) Programos veikimo sparta naudojant struktūrą ir klasę** <br>
-Testavimo parametrai: dekas, 1000000 ir 10 000 000 dydžio failai, 2 testavimo strategija.
+Testavimo parametrai: dekas, 1000000 ir 10 000 000 dydžio failai, 2 testavimo strategija. <br>
 1 000 000 įrašų
+|                                                                  |  Struktūra  |    Klasė    |
+|------------------------------------------------------------------|:-----------:|:-----------:|
+|     <br>Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas |  1.56188 s  |  2.12336 s  |
+|                <br>Failo dalijimo į dvi grupes laikas            | 0.0422208 s | 0.0457197 s |
+|              <br>Failo rūšiavimo abėcėlės tvarka laikas          |   0.3742 s  |  0.580909 s |
+|    <br>Grupių 'protingieji' ir 'vargsai' įrašymo į failus laikas |  7.17955 s  |   7.0595 s  |
+|                       <br>Bendras testo laikas                   |  9.15793 s  |  9.80952 s  |
 
+10 000 000 įrašų
+|                                                                  |  Struktūra |    Klasė   |
+|------------------------------------------------------------------|:----------:|:----------:|
+|     <br>Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas |  16.4687 s |  21.6317 s |
+|                <br>Failo dalijimo į dvi grupes laikas            | 0.579999 s | 0.463208 s |
+|              <br>Failo rūšiavimo abėcėlės tvarka laikas          |  4.31792 s |  5.8711 s  |
+|    <br>Grupių 'protingieji' ir 'vargsai' įrašymo į failus laikas |  71.655 s  |  63.8492 s |
+|                       <br>Bendras testo laikas                   |  93.0217 s |  91.8152 s |
 
+### **II) Programos veikimo sparta ir .exe failo dydis naudojant skirtingas kompiliavimo vėliavėles (flags)** <br>
+Testavimo parametrai: dekas, 10 000 000 įrašų, 2 testavimo strategija
+10 000 000 įrašų
+|                  |    -O1    |    -O2    |    -O3    |
+|------------------|:---------:|:---------:|:---------:|
+| Veikimo laikas   | 139.573 s | 93.8146 s | 91.8152 s |
+| .exe failo dydis |   225 KB  |   147 KB  |   152 KB  |
 
 
 
