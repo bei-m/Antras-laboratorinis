@@ -59,7 +59,16 @@ Jei naudotojas pasirinko naudoti tris konteinerius, tada nurodyti duomenys išsp
 
 ## **Testavimas** <br>
 ### **I) Programos veikimo sparta naudojant struktūrą ir klasę** <br>
-Testavimo parametrai: dekas, 1000000 ir 10 000 000 dydžio failai, 2 testavimo strategija. <br>
+Testavimo parametrai: dekas, 100 000 ir 1 000 000 įrašų failai, 2 testavimo strategija. <br>
+**100 000 įrašų**
+|                                                           |   Struktūra  |     Klasė    |
+|-----------------------------------------------------------|:------------:|:------------:|
+| Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas  |   0.17593 s  |  0.330403 s  |
+| Failo dalijimo į dvi grupes laikas                        | 0.00736471 s | 0.00427666 s |
+| Failo rūšiavimo abėcėlės tvarka laikas                    |  0.0421794 s |  0.0811893 s |
+| Grupių 'protingieji' ir 'vargsai' įrašymo į failus laikas |  0.549214 s  |  0.509953 s  |
+| Bendras testo laikas                                      |  0.774813 s  |   0.92587 s  |
+
 **1 000 000 įrašų**
 |                                                           |  Struktūra  |    Klasė    |
 |-----------------------------------------------------------|:-----------:|:-----------:|
@@ -69,24 +78,16 @@ Testavimo parametrai: dekas, 1000000 ir 10 000 000 dydžio failai, 2 testavimo s
 | Grupių 'protingieji' ir 'vargsai' įrašymo į failus laikas |  7.17955 s  |   7.0595 s  |
 |                    Bendras testo laikas                   |  9.15793 s  |  9.80952 s  |
 
-**10 000 000 įrašų**
-|                                                           |  Struktūra |    Klasė   |
-|-----------------------------------------------------------|:----------:|:----------:|
-|  Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas |  16.4687 s |  21.6317 s |
-|             Failo dalijimo į dvi grupes laikas            | 0.579999 s | 0.463208 s |
-|           Failo rūšiavimo abėcėlės tvarka laikas          |  4.31792 s |  5.8711 s  |
-| Grupių 'protingieji' ir 'vargsai' įrašymo į failus laikas |  71.655 s  |  63.8492 s |
-|                    Bendras testo laikas                   |  93.0217 s |  91.8152 s |
 
 ### **II) Programos veikimo sparta ir .exe failo dydis naudojant skirtingas kompiliavimo vėliavėles (flags)** <br>
-Testavimo parametrai: dekas, 10 000 000 įrašų, 2 testavimo strategija
+Testavimo parametrai: dekas, 10 000 000 įrašų failas, 2 testavimo strategija
 |                  |    -O1    |    -O2    |    -O3    |
 |------------------|:---------:|:---------:|:---------:|
 | Veikimo laikas   | 139.573 s | 93.8146 s | 91.8152 s |
 | .exe failo dydis |   225 KB  |   147 KB  |   152 KB  |
 
 **Išvados:** <br>
-1. (I) Programos laikas naudojant struktūrą ir klasę yra labai panašus.
+1. (I) Programos veikimo laikas naudojant struktūrą ir klasę yra labai panašus, bet naudojant struktūrą programa veikia greičiau.
 2. (II) Programa veikia greičiausiai naudojant -O3 kompiliavimo vėliavėlę.
 3. (III) Programos .exe failas užima mažiausiai atminties naudojant -O2 kompiliavimo vėliavėlę.
 
