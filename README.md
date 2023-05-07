@@ -1,5 +1,5 @@
 # **Antras laboratorinis**
-## _**V1.0 versija**_ <br>
+## _**V1.1 versija**_ <br>
 Programa leidžia įvesti arba skaityti iš failo studentų duomenis (vardus ir pavardes, namų darbų ir egzamino pažymius) arba generuoti šių duomenų failus, skaičiuoja kiekvieno studento galutinius pažymius ir leidžia analizuoti darbo su failais trukmę. Galutinio pažymio skaičiavimo formulė: <br>
 ![image](https://user-images.githubusercontent.com/116886672/220993297-ed501583-e082-48a1-b7d2-1f647e67070d.png)
 
