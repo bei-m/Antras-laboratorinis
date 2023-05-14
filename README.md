@@ -4,7 +4,7 @@ Programa leidžia įvesti arba skaityti iš failo studentų duomenis (vardus ir 
 ![image](https://user-images.githubusercontent.com/116886672/220993297-ed501583-e082-48a1-b7d2-1f647e67070d.png)
 
 **Svarbu:**
-* **StudentaiInfo.dmg failas yra skirtas tik macOS operacinei sistemai.**
+* **StudentuInfo.dmg failas yra skirtas tik macOS operacinei sistemai.**
 * Įvestis priimama tik su 'enter' paspaudimu.
 * Generuojamo '.txt' failo formatas: <br>
 Pavarde  Vardas  ND1  ...  NDn  Egz.
