@@ -17,8 +17,8 @@ Jei programa skaitant failą neras egzamino pažymio, automatiškai bus skaitoma
 
 **Naudojimosi instrukcija: (naudojant .dmg failą)**
 1. Jei norėsite skaityti studentų duomenis iš savo (ne programos metu generuoto) failo, šiuos failus įkelkite į ' / Users / < username >'.
-2. Atsisiųskite StudentuInfo.dmg.zip failą.
-3. Atsisiuntimų aplanke (Downloads) paspauskite ant failo pavadinimu 'StudentuInfo.dmg.zip', o tada spauskite atsiradusią programą pavadinimu 'StudentuInfo.dmg'.
+2. Atsisiųskite StudentuInfo.dmg failą.
+3. Atsisiuntimų aplanke (Downloads) paspauskite ant failo pavadinimu 'StudentuInfo.dmg'.
 4. Spauskite ant darbalaukyje (Desktop) atsiradusios programos pavadinimu 'StudentuInfo'.
 5. Paspauskite ant failo pavadinimu 'StudentuInfo'.
 6. Sekite instrukcijas pasirodžiusias ekrane. <br><br>
